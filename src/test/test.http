@@ -1,0 +1,14 @@
+### Get current game state
+GET http://localhost:8080/api/game
+
+### Make a move at row 0, col 1
+POST http://localhost:8080/api/game/move
+Content-Type: application/json
+
+{
+  "row": 0,
+  "col": 1
+}
+
+### Reset game
+POST http://localhost:8080/api/game/reset
